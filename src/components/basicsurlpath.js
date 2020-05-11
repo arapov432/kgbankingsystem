@@ -17,15 +17,13 @@ export default function Basicsurlpath() {
                 <li>
                     <Link to={`${url}/platform`}>Platform</Link>
                 </li>
-                <li>
-                    <Link to={`${url}/search`}>Search</Link>
-                </li>
+               
             </ul>
             <hr/>
             <Route exact path={`${path}/`} component={Applications}/>
             <Route path={`${path}/devices`} component={Devices}/>
             <Route path={`${path}/platform`} component={Platform}/>
-            <Route path={`${path}/search`} component={Search}/>
+       
         </div>
         </Router>
     )

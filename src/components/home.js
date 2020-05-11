@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Route, Link,  } from 'react-router-dom'
 
 import SidebarExample from './recursive'
+import Search from './search'
 
 const topics = [
     {
@@ -113,7 +114,7 @@ export default function Home() {
             <Router>
                 <ul>
                     <li>
-                    <Link to="/basic"> Basic Page</Link>
+                    <Link to="/"> Basic Page</Link>
                     </li>
                     <li>
                     <Link to="/sidebar"> Sidebar Page</Link>
@@ -123,7 +124,7 @@ export default function Home() {
                     </li>
                     </ul>
                
-                    <Route exact path="/basic" component={Basic}/>
+                    <Route exact path="/" component={Basic}/>
                     <Route exact path="/sidebar" component={SidebarExample}/>
                     <Route path="/topics" component={Topics}/>
              
@@ -133,6 +134,10 @@ export default function Home() {
 }
 function Basic(){
     return (
+       
+        <div>
         <h1>This is basic page</h1>
-    )
+        <Search/>
+      </div>
+        )
 }

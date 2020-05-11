@@ -7,7 +7,7 @@ import {
   
 } from "react-router-dom";
 import Search from "./search";
-import Contacts from "./contacts";
+import Contacts from "./logins";
 //import Home from "./home";
 
 
@@ -25,7 +25,7 @@ const routes =[
 {
     path:'/contacts',
     sidebar: ()=> <h1>Contacts here</h1>,
-    main:()=> <Contacts/>
+    main:()=> <h1>Contact main page goes here</h1>
 }
 ]
 
